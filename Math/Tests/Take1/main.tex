@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{mathabx}
+\usepackage{mathbbol}
+\usepackage{cancel}
+
+% Math/Tests/Test1/Take1
+\title{Math, Take 1}
+\author{Clifton Toaster Reid}
+\date{December 2023}
+
+\begin{document}
+\maketitle
+
+\section{Supervised homework number one}
+\subsection{Task number 1}
+
+Nous avons comme théorie que pour tout nombre entier superieur ou égal à 1, noté $n$, l'équation suivante est vrai.
+\[\sum_{k=1}^{k=n} k(k+1)(k+2) = \frac{n(n+1)(n+2)(n+3)}{4}\]
+
+\paragraph*{Initialisation}
+
+Pour vérifier cette théorie nous alons tout d'abord commencer par tester ceci avec la première valeur de $n$, c'est à dire $1$.
+
+\[\sum_{k=1}^{k=n} k(k+1)(k+2) = \frac{n(n+1)(n+2)(n+3)}{4}\]
+\[\sum_{k=1}^{k=1} k(k+1)(k+2) = \frac{1(1+1)(1+2)(1+3)}{4}\]
+\[1(1+1)(1+2) = \frac{1(1+1)(1+2)(1+3)}{4}\]
+\[2*3 = \frac{2*3*4}{4}\]
+\[6 = \frac{2*3*\cancel{4}}{\cancel{4}}\]
+\[6 = 2*3\]
+\[6 = 6\]
+
+L'assertion est alors vraie pour \(n=1\).
+
+\paragraph*{Hérédité}
+
+Afin de vérifier la théorie nous allons maintenant procéder à prouver que pour tout \(n\geq1\in \mathbb{N}\) en faisant usage de \(n+1\).
+
+\[\sum_{k=1}^{k=n+1} k(k+1)(k+2) = \frac{(n+1)(n+1+1)(n+1+2)(n+1+3)}{4}\]
+\[\frac{(1*2*3)((n+1)(n+2)(n+3))}{2} = \frac{(n+1)(n+2)(n+3)(n+4)}{4}\]
+\[\frac{(6)((n+1)(n+2)(n+3))}{2} = \frac{n^4 + 10n^3 + 35n^2 + 50n + 24}{4}\]
+\[\frac{(6)(n^3 + 6n^2 + 11n + 6)}{2} = \frac{n^4 + 10n^3 + 35n^2 + 50n + 24}{4}\]
+\[\frac{6n^3 + 36n^2 + 66n + 36}{2} = \frac{n^4 + 10n^3 + 35n^2 + 50n + 24}{4}\]
+
+\end{document}
